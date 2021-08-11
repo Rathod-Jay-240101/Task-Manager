@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <!-- My CSS -->
+        <link rel="stylesheet" href="css\style.css">
+        <!-- Fonts Google -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&display=swap" rel="stylesheet">
+        <link rel="icon" href="icon\fevicon.jpg">
+        <title>Task Manager</title>
+    </head>
+    <body style="background-color: #ebebeb;">
+        <!-- Main Container -->
+        <div class="container">
+            <!-- Outer Card -->
+            <div class="card border-primary my-5 border-3 shadow" style="max-width: 80rem; background-color: #ebebeb;">
+                <div class="card-header text-warning" style="background-color: #cfcfcf;">
+                    <h2>My Tasks Manager</h2>
+                </div>
+                <div class="card-body text-primary">
+                    <form id="add-task-form">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control border-primary border-2" id="new-task" placeholder="New Task" style="background-color: #ebebeb;" autocomplete="off">
+                            <label for="new-task">New Task</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="add-task">ADD TASK</button>
+                    </form>
+                </div>
+                <!-- Inner Card -->
+                <div class="card border-warning mb-3 mx-3 border-3 shadow" style="max-width: 80rem; background-color: #ebebeb">
+                    <div class="card-header text-primary" style="background-color: #cfcfcf">
+                        <h3>Tasks List</h3>
+                    </div>
+                    <div class="card-body text-warning">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control border-warning border-2" id="filter-task" placeholder="Filter Task" style="background-color: #ebebeb;" autocomplete="off">
+                            <label for="filter-task">Filter Task</label>
+                        </div>
+                        <ul class="list-group list-group-flush my-3 mx-4" id="tasks-list">
+                        </ul>
+                        <button class="btn btn-warning" id="clear-tasks">CLEAR TASKS</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+        <!-- Custom JS -->
+        <script src="script/app.js"></script>
+    </body>
+</html>
